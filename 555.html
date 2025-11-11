@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Space Theme</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and space theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Using a dark, deep space blue/black radial gradient for the background */
+            background: radial-gradient(circle at 50% 50%, #172554 0%, #030712 100%);
+        }
+        .space-text {
+            /* Subtle text shadow for a glow effect, enhancing the space theme */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(59, 130, 246, 0.8);
+            letter-spacing: 0.2em; /* Wider spacing for dramatic effect */
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 0.9;
+          }
+          100% {
+            transform: scale(1.05);
+            opacity: 1;
+          }
+        }
+    </style>
+</head>
+<!-- Body uses min-h-screen to ensure full height and flex properties for centering -->
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- The simple "COMING SOON" text -->
+    <h1 class="space-text text-white text-5xl sm:text-6xl md:text-8xl font-extrabold uppercase transition duration-500 ease-in-out">
+        Coming Soon
+    </h1>
+
+</body>
+</html>
